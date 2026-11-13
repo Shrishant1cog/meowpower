@@ -1,0 +1,1 @@
+"""MeowPower backend application package."""

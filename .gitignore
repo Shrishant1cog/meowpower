@@ -1,0 +1,46 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/coverage/
+
+# Project-local generated state
+cache/*
+!cache/.gitkeep
+temp/*
+!temp/.gitkeep
+logs/*
+!logs/.gitkeep
+models/*
+!models/.gitkeep
+storage/database/*
+!storage/database/.gitkeep
+storage/sources/*
+!storage/sources/.gitkeep
+storage/audio/*
+!storage/audio/.gitkeep
+storage/transcripts/*
+!storage/transcripts/.gitkeep
+storage/clips/*
+!storage/clips/.gitkeep
+storage/thumbnails/*
+!storage/thumbnails/.gitkeep
+storage/music/*
+!storage/music/.gitkeep
+
+# Local configuration and secrets
+.env
+*.local
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

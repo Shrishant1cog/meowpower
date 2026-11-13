@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MeowPower is a local-first AI production studio for creating authorized short-form video workflows."
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#11130f" />
+    <script>
+      (() => {
+        const stored = localStorage.getItem("meowpower-theme");
+        const theme = stored === "light" || stored === "dark" ? stored : "system";
+        const dark = theme === "dark" || (theme === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.classList.toggle("dark", dark);
+        document.documentElement.style.colorScheme = theme === "system" ? "light dark" : theme;
+      })();
+    </script>
+    <title>MeowPower</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
